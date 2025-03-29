@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head><title>Photo Gallery</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@keyframes fadeout
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+header
+{
+background:teal;
+width:30%;
+margin:auto;
+color:white;
+text-align:center;
+font-size:20px;
+padding:20px;
+margin-top:-10px;
+margin-bottom:30px;
+font-family:arial black;
+box-shadow:5px 5px 20px cyan;
+transition:0.50s;
+border-radius:20px;
+
+}
+
+header:hover
+{
+box-shadow:10px 10px 50px magenta;
+cursor:pointer;
+}
+
+
+body
+{
+background:black;
+text-align:center;
+animation:fadeout 1s;
+
+}
+
+.pic
+{
+width:20%;
+border-radius:20px;
+margin:60px;
+box-shadow:5px 5px 10px cyan;
+transition:0.50s;
+}
+
+.pic:hover
+{transform:scale(1.5);
+cursor:pointer;
+}
+}
+
+
+/* Extra small devices (phones,600px and down) */
+@media only screen and (max-width: 600px)
+{
+body{background:pink;}
+header
+{
+width:100%;
+font-size:15px;
+padding:5px;
+}
+.pic
+{
+width:80%;
+margin:10px;
+margin-bottom:40px;
+}
+
+}
+
+
+
+/*Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+body{background:green;}
+header
+{
+//display:none;
+width:100%;
+font-size:15px;
+padding:5px;
+}
+.pic
+{
+width:40%;
+margin:10px;
+margin-bottom:40px;
+}
+}
+
+
+
+/*Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+{
+header
+{
+display:block;
+width:100%;
+font-size:30px;
+
+}
+body{background:blue;}
+.pic
+{
+width:20%;
+margin:10px;
+margin-bottom:40px;
+}
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+header{width:100%;
+font-size:50px;
+}
+body{background:orange;}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+header
+{
+
+width:100%;
+font-size:50px;
+
+}
+body{background:yellow;}
+}
+s
+
+</style>
+
+<body>
+<header>
+Web Photo Gallery
+</header>
+<a href="index1.html">
+<img src="image/photo1.jpg" class="pic">
+</a>
+<a href="index2.html">
+<img src="image/photo2.jpg" class="pic">
+</a>
+<a href="index3.html">
+<img src="image/photo3.jpg" class="pic">
+</a>
+<a href="index4.html">
+<img src="image/photo4.jpg" class="pic">
+</a>
+<a href="index5.html">
+<img src="image/photo5.jpg" class="pic">
+</a>
+<a href="index6.html">
+<img src="image/photo6.jpg" class="pic">
+</a>
+
+
+</body>
+</html>
