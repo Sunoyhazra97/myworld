@@ -1,117 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <title>Home</title>
-    <style>
-    body {
-        background-color: #ffe4c4;
-    }
 
-    nav {
-        text-align: right;
-        font-family: Arial, sans-serif;
-        background-color: black;
-        border: 1px solid teal;
-        border-radius: 10px;
-        padding: 10px;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-        margin: 10px auto;
-        width: fit-content;
-    }
+<head>  <title>Menu</title> </head>
 
-    nav a:link {
-        transition: 0.5s;
-        text-decoration: none;
-        color: white;
-        padding: 20px;
-        margin: 5px;
-        display: inline-block;
-        border-radius: 5px;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    nav a:hover {
-        text-decoration: underline;
-        background: cyan;
-        color: black;
-    }
+<header>
+header
+</header>
 
-    nav a:active {
-        color: white;
-    }
+<style>
+header
+{
+height:200px;
+background:black;
+}
 
-    nav a:visited {
-        color: white;
-    }
+nav
+{
+text-align: center;
+font-family: Arial, sans-serif;
+background-color: black;
+border: 1px solid teal;
+border-radius: 10px;
+padding: 10px;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+margin: 10px auto;
+width: fit-content;
+position: relative;
+}
 
-    .banner {
-        background-image: url("banner.jpg");         
-	background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        text-align: center;
-        padding: 50px 20px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-    }
+#menu
+{
+cursor: pointer;
+font-size: 30px;
+background: gray;
+padding: 10px 20px;
+border-radius: 5px;
+color: white;
+display: block;
+margin: auto;
+width: fit-content;
+}
 
-    #main {
-        width: 70%;
-        margin: auto;
-	margin-top: 20px;
-        font-size: 20px;
-        border: 1px solid black;
-        text-align: justify;
-        padding: 30px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    }
+nav ol
+{
+list-style: none;
+padding: 0px;
+margin: 0;
+text-align: center;
+display: none;
+}
 
-    img {
-        display: block;
-        margin: auto;
-    }
+nav:hover ol
+{
+display: block;
+}
 
-    hr {
-        color: black;
-        size: 60;
-        width: 100%;
-    }
+nav ol li
+{
+background: teal;
+padding: 15px;
+margin: 5px 0;
+width: 200px;
+border-radius: 5px;
+box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+nav ol li a:link,
+nav ol li a:visited
+{
+color: white;
+font-size: 18px;
+text-decoration: none;
+display: block;
+}
+
+nav ol li:hover
+{
+background: black;
+}
+
+nav ol li:hover a
+{
+text-decoration: underline;
+}
+
+nav .links {
+display: none;
+}
+
+/* Banner and other styles remain unchanged */
+.banner {
+background-image: url("images/banner.jpg");         background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+text-align: center;
+padding: 50px 20px;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+}
+
+#main {
+width: 70%;
+margin: auto;
+margin-top: 20px;
+font-size: 20px;
+border: 1px solid black;
+text-align: justify;
+padding: 30px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+img {
+display: block;
+margin: auto;
+}
+
+hr {
+color: black;
+size: 60;
+width: 100%;
+}
 
 .pic
 {
 width:20%;
+}
+
+/* Medium and larger screens */
+@media only screen and (min-width: 768px)
+{
+
+#menu {
+display: none;
+}
+
+nav {
+width: 80%;
+text-align: right;
+}
+
+nav:hover ol {
+display: none;
+}
+
+nav .links {
+display: block;
+}
+
+nav .links a:link,
+nav .links a:visited {
+transition: 0.5s;
+text-decoration: none;
+color: white;
+padding: 15px 20px;
+margin: 0 5px;
+display: inline-block;
+border-radius: 5px;
+font-size: 18px;
+}
+
+nav .links a:hover {
+text-decoration: underline;
+background: cyan;
+color: black;
+}
 
 }
-    </style>
-</head>
+
+</style>
+
 <body>
-  <nav>
-         <a href="#">Home<a>
-         <a href="practice.html">Practice</a>
-         <a href="https://www.figma.com/design/d6KAQFNDYZh6dosRc2VVH9/Untitled?node-id=0-1&p=f&t=CxCk2sBxo53Lli0s-0"_blank">Figma</a>
-         <a href="https://www.behance.net/?tracking_source=nav20" target="_blank">Behance</a>
-         <a href="#">About<a>
-   </nav>
 
-    
-  
-    <div class="banner">
-        <img src="profile.jpg" class="pic">
-    </div>
+<nav>
+<span id="menu">&#9776; Menu</span>
+<ol>
+<li><a href="#">Home</a></li>
+<li><a href="practice.html">Practices</a></li>
+<li><a href="https://www.behance.net/?tracking_source=nav20" target="_blank">Behance</a></li>
+<li><a href="https://www.figma.com/design/d6KAQFNDYZh6dosRc2VVH9/Untitled?node-id=0-1&p=f&t=CxCk2sBxo53Lli0s-0" target="_blank">Figma</a></li>
+<li><a href="#">About</a></li>
+</ol>
 
-  
-    <div id="main">
-        <p>My name is sunoy hazra I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs. 
+<div class="links">
+<a href="#">Home</a>
+<a href="practice.html">Practice</a>
+<a href="https://www.figma.com/design/d6KAQFNDYZh6dosRc2VVH9/Untitled?node-id=0-1&p=f&t=CxCk2sBxo53Lli0s-0" target="_blank">Figma</a>
+<a href="https://www.behance.net/?tracking_source=nav20" target="_blank">Behance</a>
+<a href="#">About</a>
+</div>
+</nav>
+
+<div class="banner">
+<img src="profile.jpg" class="pic">
+</div>
+
+<div id="main">
+<p>My name is Sunoy Hazra I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs. 
 </p>
-<p1>
+<p>
 My journey in the design world is fueled by curiosity and a constant desire to learn and grow.
-</p1>
+</p>
 <p>
 I'm always ready to dive into new projects and explore innovative ways to solve problems.
 </p>
-        When I'm not designing, you can find me exploring the latest design trends, experimenting with new design tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
-    </div>
-<hr color="black"size="5"/>
-   </body>
+<p>
+When I'm not designing, you can find me exploring the latest design trends, experimenting with new design tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!
+</p>
+</div>
+
+<hr color="black" size="8"/>
+
+<div id="main" margin:50%;>
+
+<footer>
+<p style="color:teal;">
+RESOURCES 
+</p>
+<p1 style="color:black;">
+Overview
+</p>
+<p style="color:black;">
+Premium plans
+<p/>
+<p style="color:black;">
+Affiliate Plans
+</p>
+<p style="color:black;">
+Promotions
+</p> 
+
+
+</footer>
+
+
+</body>
 </html>
