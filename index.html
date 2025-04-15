@@ -5,41 +5,65 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header>
-</header>
-
 <style>
-@keyframes changepic
-{
-10%{background-image:url(image/g1.gif);}
-20%{background-image:url(image/g1.gif);}
-30%{background-image:url(image/g2.gif);}
-40%{background-image:url(image/g2.gif);}
-50%{background-image:url(image/g3.gif);}
-60%{background-image:url(image/g3.gif);}
-70%{background-image:url(image/g4.gif);}
-80%{background-image:url(imag/g4.gif);}
-90%{background-image:url(image/g5.gif);}
-100%{background-image:url(image/g5.gif);}
+
+@keyframes runbanner {
+10% { left: 0%; }
+20% { left: -19%; }
+30% { left: -19%; }
+40% { left: -38%; }
+50% { left: -38%; }
+60% { left: -57%; }  
+70% { left: -57%; }
+80% { left: -76%; }
+90% { left: -76%; }
 }
-header
+
+#slide
 {
-width:90%;
-height:900px;
-text-align:center;
-margin:auto;
+width:650%;
+height:600px;
+margin-top:-5px;
+}
+
+body{
+overflow-x:hidden;
+}
+
+pic
+{
+width:19%;
+height:100%;
 box-shadow:10px 10px 10px gray;
-background-image:url(images/p9.gif);
-background-repeat:no-repeat;
-background-size:cover;
-//background-size:100% ,500px;
-transition:2s;
-animation:changepic 15s infinite;
+position:relative;
+animation: runbanner 15s infinite;  
 }
+
 header
 {
-height:200px;
-background:black;
+width: 500%;
+height: 420px;
+margin-top: -5px;
+position: relative; 
+white-space: nowrap; 
+overflow: hidden;
+}
+
+body
+{
+overflow-x:hidden;
+}
+
+.picture
+{
+width: 19.5%;
+height: 100%;
+box-shadow: 10px 10px 10px gray;
+position: relative;
+animation: runbanner 15s infinite;
+padding: 10px;
+display: inline-block; 
+vertical-align: top;  
 }
 
 nav
@@ -201,6 +225,16 @@ color: black;
 
 <body>
 
+<header>
+
+<img src="image/photo1.jpg" class="picture">
+<img src="image/photo2.jpg" class="picture">
+<img src="image/photo3.jpg" class="picture">
+<img src="image/photo4.jpg" class="picture">
+<img src="image/photo5.jpg" class="picture">
+
+</header>
+
 <nav>
 <span id="menu">&#9776; Menu</span>
 <ol>
@@ -261,6 +295,9 @@ Promotions
 
 
 </footer>
+
+
+
 
 
 </body>
