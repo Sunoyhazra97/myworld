@@ -1,0 +1,171 @@
+<!doctype  html>
+<html>
+<head>
+<title>Login</title>
+
+</head>
+
+
+<style>
+#main {
+background: lightgray;
+width: 40%;
+margin: auto;
+text-align: center;
+margin-top: 100px;
+border: 1px solid black;
+border-radius: 20px;
+box-shadow: 10px 10px 10px gray;
+padding: 20px;
+}
+
+table {
+margin: auto;
+width: 100%;
+padding: 10px;
+font-size: 25px;
+}
+        
+input[type="text"], input[type="password"] {
+width: 100%;
+height: 30px;
+font-size: 25px;
+}
+        
+input[type="submit"], input[type="reset"] {
+margin: 10px;
+width: 90px;
+height: 40px;
+background: #3982ec;
+color: white;
+}
+/* Responsive adjustments */
+@media only screen and (max-width: 1024px) {
+#main {
+width: 65%;
+height: 45%;
+}
+    
+table {
+font-size: 22px;
+}
+    
+input[type="text"], 
+input[type="password"] {
+font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+#main {
+width: 75%;
+height: 50%;
+padding: 15px;
+}
+    
+table {
+font-size: 20px;
+}
+    
+caption {
+font-size: 26px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+#main {
+width: 85%;
+height: 55%;
+padding: 10px;
+}
+    
+table {
+font-size: 18px;
+padding: 5px;
+}
+    
+caption {
+font-size: 22px;
+margin-bottom: 15px;
+}
+    
+input[type="text"], 
+input[type="password"] {
+font-size: 16px;
+height: 28px;
+}
+    
+input[type="submit"], 
+input[type="reset"] {
+width: 80px;
+height: 36px;
+font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 360px) {
+#main {
+width: 90%;
+height: 60%;
+}
+
+table {
+font-size: 16px;
+}
+    
+caption {
+font-size: 20px;
+}
+}
+</style>
+
+
+<body>
+
+<div id="main">
+<table border="0" cellpadding="5">
+<caption style="font-size:30px;font-weight:bold;">Login Form</caption>
+<form action="">
+<tr>
+
+<td>
+<label for="uid">Login id</label>
+</td>
+
+<td>
+<input id="uid" type="text" placeholder="Type user id here..." required title="type user id here...!">
+</td>
+</tr>
+<tr>
+
+
+<td>
+<label for="pass">Password</label>
+</td>
+
+<td>
+<input id="pass" title="type Password...!" type="password" placeholder="Type user Password..." required>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td></td>
+<td>
+<input type="submit" value="login">
+<input type="reset">
+</td>
+</tr>
+
+
+</form>
+
+</table>
+
+</div>
+
+</body>
+
+</html>
