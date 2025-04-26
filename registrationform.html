@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+<head><title>Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<style>
+
+body {
+background-image: url('image/bg2.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+#main
+{background:lightgray;
+width:40%;
+margin:auto;
+text-align:center;
+margin-top:100px;
+border:1px solid black;
+border-radius:20px;
+box-shadow:10px 10px 10px gray;
+padding:20px;
+}
+table
+{
+margin:auto;
+width:100%
+padding:10px;
+font-size:25px;
+}
+input[type="text"],[type="number"],[type="email"],[type="city"]
+{
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+border: 1px solid #ddd;
+border-radius: 6px;
+font-size: 16px;
+box-sizing: border-box;
+background: rgba(255, 255, 255, 0.9);
+}
+
+input[type="submit"],[type="reset"]{margin:10px;width:90px;height:40px;background:#3982ec;color:white;}
+
+@media (max-width: 768px) {
+#main {
+width: 95%;
+padding: 15px;
+}
+
+table {
+display: block;
+}
+
+
+
+input[type="submit"],
+input[type="reset"] {
+width: 100%;
+margin: 10px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+transform: scale(1.4);
+margin-right: 15px;
+}
+}
+
+@media (max-width: 480px) {
+body {
+padding: 10px;
+}
+
+#main {
+margin: 15px auto;
+border-radius: 10px;
+}
+
+caption {
+font-size: 24px;
+padding: 10px;
+}
+
+input, select, textarea {
+font-size: 14px;
+padding: 10px;
+}
+}
+
+
+</style>
+
+<body>
+
+<div id="main">
+
+<table border="0" cellpadding="5">
+<caption style="font-size:30px;font-weight:bold;">Registration form</caption>
+<form action="http://tataplay/user/login.php"Method="post">
+
+<tr>
+<td>
+<label for ="uid">Name</label>
+</td>
+<td>
+<input id="uid" type="text"placeholder="Type user id here..."required title="type user id here...!">
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Age</label>
+</td>
+
+<td>
+<input type="number" min="16"max="50">
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Message</label>
+</td>
+<td>
+<textarea rows="10" cols="40">Type Message Here...</textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Email</label>
+</td>
+<td>
+<input type="email">
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Gender</label>
+</td>
+<td>
+Male <input type="radio"name="gender"checked value="male">
+Female<input type="radio"name="gender"checked value="female">
+Other<input type="radio"name="gender">
+
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Hobby</label>
+</td>
+
+<td>
+Reading <input type="checkbox"value="reading">
+Writing<input type="checkbox"value="writing"checked>
+Cooking <input type="checkbox" value="cooking">
+</td>
+</tr>
+
+<tr>
+<td><label for="city">City</label></td>
+<td>
+<select id="city" size="1">
+<option value=""selected>Select City</option>
+<option value="delhi">Delhi</option>
+<option value="mumbai">Mumbai</option>
+<option value="chennai" >Chennai</option>
+<option value="kolkata">Kolkata</option>
+<option value="bangalore">Bangalore</option>
+<option value="ghaziabad">Ghaziabad</option>
+</select>
+
+<tr>
+<td>
+<label>Upload</label>
+</td>
+
+<td>
+<input type="file">
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Select Color</label>
+</td>
+<td>
+<input type="color">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="ice-cream-choice">Choose a flavor;</label>
+</td>
+<td>
+<input list="data"/>
+</td>
+
+<datalist id="datalavors">
+<option value="chocolate"></option>
+<option value="coconut"></option>
+<option value="mint"></option>
+<option value="sttawberry"></option>
+<option value="vanilla"></option>
+</datalist>
+
+</tr>
+
+<tr>
+<td>
+</td>
+<td>
+
+<input type="submit"value="login">
+<input type="reset">
+
+</td>
+
+</tr>
+</form>
+
+</table>
+</div>
+
+
+
+</body>
